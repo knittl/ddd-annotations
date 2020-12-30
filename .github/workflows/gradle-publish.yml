@@ -1,0 +1,25 @@
+name: Publish artifacts to the Maven Central Repository
+on:
+  push:
+    branches: [ master ]
+    tags: [ '*' ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: temurin
+      - name: Publish package with Gradle
+        uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+        with:
+          arguments: clean build publish
+        env:
+          MAVEN_USR: ${{ secrets.MAVEN_USR }}
+          MAVEN_PWD: ${{ secrets.MAVEN_PWD }}
+          MAVEN_SIGN_ID: ${{ secrets.MAVEN_SIGN_ID }}
+          MAVEN_SIGN_KEY: ${{ secrets.MAVEN_SIGN_KEY }}
+          MAVEN_SIGN_PWD: ${{ secrets.MAVEN_SIGN_PWD }}
