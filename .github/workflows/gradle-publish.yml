@@ -1,0 +1,18 @@
+name: Publish snapshot package to the Maven Central Repository
+on:
+  push:
+    branches: [ master, feature/1-publish-artifacts ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Publish package
+        run: gradle build publish
+        env:
+          MAVEN_USR: ${{ secrets.MAVEN_USR }}
+          MAVEN_PWD: ${{ secrets.MAVEN_PWD }}
