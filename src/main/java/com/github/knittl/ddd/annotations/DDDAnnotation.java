@@ -1,6 +1,7 @@
-package at.appicenter.ddd.annotations;
+package com.github.knittl.ddd.annotations;
 
-import java.lang.annotation.*;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
 
 /**
  * Meta annotation for all DDD annotations.

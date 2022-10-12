@@ -1,6 +1,9 @@
-package at.appicenter.ddd.annotations;
+package com.github.knittl.ddd.annotations;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Target;
 
 /**
  * "Namespace" class for annotations which describe <em>Domain Driven Design</em> concepts which could be ambiguous

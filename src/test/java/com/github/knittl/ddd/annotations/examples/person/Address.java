@@ -1,6 +1,6 @@
-package at.appicenter.ddd.annotations.examples.person;
+package com.github.knittl.ddd.annotations.examples.person;
 
-import at.appicenter.ddd.annotations.*;
+import com.github.knittl.ddd.annotations.ValueObject;
 
 @ValueObject
 public class Address {

@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group 'at.apppicenter'
-version '0.1-SNAPSHOT'
+group 'com.github.knittl'
+version '0.0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()

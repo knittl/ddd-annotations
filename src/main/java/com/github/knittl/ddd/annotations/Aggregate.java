@@ -1,6 +1,8 @@
-package at.appicenter.ddd.annotations;
+package com.github.knittl.ddd.annotations;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
 
 /**
  * Marker annotation for an aggregate. Best used on package defined in {@code package-info.java} files (available .
