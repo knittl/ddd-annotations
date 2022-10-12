@@ -56,6 +56,7 @@ publishing {
                 name = 'DDD Annotations'
                 description = 'Seamlessly generate documentation for your domain-driven-design projects'
                 packaging = 'jar'
+                url = 'https://github.com/knittl/ddd-annotations'
 
                 scm {
                     url = 'https://github.com/knittl/ddd-annotations'
