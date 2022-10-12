@@ -1,7 +1,6 @@
 name: Publish artifacts to the Maven Central Repository
 on:
   push:
-    branches: [ master ]
     tags: [ '*' ]
 jobs:
   publish:
