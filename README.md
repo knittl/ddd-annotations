@@ -14,3 +14,8 @@ The following projects build on and leverage DDD annotations:
 
 * [DDD Spring](https://github.com/knittl/ddd-spring): Automatically register beans for certain DDD annotated classes.
 * [DDD Architecture](https://github.com/knittl/ddd-architecture): Enforce rules in your DDD project.
+
+Similar Projects
+----------------
+
+* [xmolecules/jmolecules](https://github.com/xmolecules/jmolecules): jMolecules – Architectural abstractions for Java.
