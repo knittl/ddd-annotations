@@ -37,6 +37,18 @@ public final class Domain {
 
     /**
      * Marker annotation for an event relevant for the Domain.
+     * <p>
+     * A domain event is a full‐fledged part of the domain model, a representation of something that happened in the
+     * domain. Ignore irrelevant domain activity while making explicit the events that the domain experts want to
+     * track or be notified of, or which are associated with state change in the other model objects.
+     * <p>
+     * Domain events are ordinarily <i>immutable</i>, as they are a record of something in the past. In addition to a
+     * description of the event, a domain event typically contains a timestamp for the time the event occurred and
+     * the identity of entities involved in the event. Also, a domain event often has a separate timestamp indicating
+     * when the event was entered into the system and the identity of the person who entered it. When useful, an
+     * identity for the domain event can be based on some set of these properties.
+     *
+     * @see <a href="https://www.domainlanguage.com/ddd/reference/">DDD Reference</a>
      */
     @Documented
     @Target(ElementType.TYPE)
